@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/internet_word_online_icon_250155.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor &#x1F44C.</p>
+   <!--Para adicionar um vídeo basta utilizar a tag VIDEO, dentro SRC(origem) adidionar o arquivo do vídeo, caso ficar muito grande na tela tem como diminuir utilizando o atributo WIDTH (largura)-->
+    <!--Segundo método logo abaixo, é igual a dos áudios, criar a tag VIDEO e apagar o SRC="" e adicionar o atributo SOURCE:SRC, logo em seguida adicionar o arquivo e especificar qual é o tipo de arquivo. Lembrando que esse segundo método é mais eficiente, caso o primeiro formato de vídeo não carregue para o visitante, irá carregar o proximo video, por isso colocar o mesmo video mas com formato diferente (mp4, webm, m4v e ogv, o M4V é o mais recomendado, pois tem uma compatibilidade maior com os navegadores) veja um exemplo abaixo. OBS: Dessa forma vai ter um alto custo, utilizando esse segundo método-->
+    <video width="560" loop muted autoplay poster="imagens/pexels-oliver-sjöström-931007.jpg" controls>
+        <source src="midia/video01.mp4" type="video/mp4">
+        <source src="midia/video02.webm" type="video/webm">
+    </video> <!--Utilizei o atributo WIDTH (largura) para diminuir o tamanho do video na tela para ficar em um bom tamanho para o visitante ver, e também adicionei outro atributo que é POSTER (capa para o video) e caso queira que o vídeo fique reiniciando sozinho é só usar o atributo LOOP, como o próprio nome já diz, o vídeo ficará em loop-->
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <iframe autoplay width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Utilizando vídeo que já estão no YouTube o custo reduz, porque o vídeo esta dentro do próprio YouTube ou seja vai utilizar os dados dessa plataforma e também vai ajudar muito o algoritimo--> <!--Para adicionar vídeos do YouTube vai na aba compartilhar depois incorporar e copiar o texto, logo em seguida colar CTRL+V, veja o exemplo acima. Verifique quais plataformas é melhor para hospedar o seu vídeo, seja o YouTube, Vimeo e por ai vai...-->
+</body>
+</html>

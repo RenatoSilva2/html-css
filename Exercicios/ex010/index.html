@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="shortcut icon" href="internet_word_online_icon_250155.ico" type="image/x-icon">
+</head>
+<body> <!--Para usar links é so usar tag A, mas começar pela tag P que no caso é para texto e depois selecionar a parte que voçê quer que seja clicavel adicionando a tag A-->
+    <h1>Usando Links Externos</h1>
+    <p>Voçê pode acessar o <a href="https://www.youtube.com/@onplayer01/videos" target="_blank" rel="external"><strong>meu canal no Youtube</strong></a> e se entreter.</p>
+    <img src="Print do canal no yt 01.png" alt="Imagem do canal"><br>
+    <p>Sempre que ver um dos nossos vídeos, deixe seu <em>like</em> e <em>compartilhe</em> com amigos que gosta desse tipo de conteúdo &#x1F604.</p><!--a tag TARGET="_blank"e a tag REL="external, leva o visitante para outro site que não é seu-->
+    <p>Voçê pode acessar esse <a href="https://t.me/AliexpressShopeeOfertasecupons"><strong>canal de ofertas</strong></a> no Telegram.</p><br>
+    <style>
+        mark {
+            background-color: aqua;
+            font-family: sans-serif;
+        }
+    </style>
+    <p>Aproveite as <mark>promoções diárias</mark> e realize as suas compras &#x1F60E.</p> <!--Para que o link que voçê adicionou não fique por cima da sua pagina ("Sumir"), tem que usar a tag TARGET="_BLANK" e REL="external" para indicar que o link é externo-->
+    <h2>Usando Links Internos</h2>
+    <p>Esta é a primeira página do site, se voçê quiser, pode acessar também a minha <a href="index02.html" rel="next" target="_self">segunda página</a></p>
+<p>Aos poucos aprendendo sobre <abbr title="Linguagem de Marcação de HyperTexto"><mark>HTML</mark></abbr>, mas no futuro quero aprender linguagens para desenvolver <abbr title="Jogos"><mark>games</mark></abbr>, uma paixão que tenho desde criaça. Porquê não juntar uma paixão + conhecimento e criar um jogo? Claro que irei fazer mesmo que seja o mais simples possível &#x1F604.</p>
+<img src="Miranha.png" alt="Homem Aranha do Multiverso">
+<ul>
+    <li>Para baixar essa imagem é só <a href="Miranha.png" download="Miranha" type="application/png"><em>clicar aqui</em></a></li>
+</ul><!--Para usar links internos que vai encaminhar o visitante para a proxima pagina (do seu proprio site), tem que usar a tag A e dentro dos paranteses do HREF="adicionar o link da sua segunda pagina". lembrando quê, para ficar com mais sentido (semântico) usar o NEXT dentro da tag REL="NEXT"-->
+    <p>Voçê pode acessar a nossa <a href="Notícias/index003.html" rel="next" target="_self">página de Músicas</a></p>
+    <h1>links para Download</h1>
+    <ul>
+        <li><a href="Filipe Ret - F_F_M.mp3" download="Filipe Ret - F_F_M" type="application/vnd.music-niff">Baixar música</a></li>
+        <li><a href="Filipe Ret - F_F_M.zip" download="F_F_M.Zip" type="application/zip">Baixar em arquivo ZIP</a></li> <!--Para adicionar um arquivo para download é só usar a tag A, e no parâmentro (HREF), adicionar o arquivo que voçê deseja e usar tag de DONWLOAD="nome do arquivo que voçê adicionou para baixar", depois usar outra tag/parâmentro TYPE="usar algum media TYPE de acordo com o seu arquivo, se for em PDF usar application/PDF, outro exemplo: application/vnd.music-niff que é para arquivo de músicas"
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #494E69, #616EB5)
+}
+
+main {
+    background-color: white;
+    width: 600px; /*Width é a largura do conteúdo que irá ficar na tela, no caso o seletor foi o "main" utilizando o width vai diminuir*/
+    padding: 10px; /*PADDING signifca ACOCHOAMENTO, ou seja vai pegar o conteúdo ou a imagem de fundo e dá mais um espaço nas laterais para não ficar perto das bordas*/
+    margin: auto; /*MARGIN significa MARGEM e com atributo AUTO irá deixar a margem automatica se ajusta com o tamanho*/ 
+    box-shadow: 5px 5px 15px #595c6c; /*BOX-SHADOW siginifica SOMBRA DA CAIXA, é para adicionar sombra, primeiro paramentro é quanto essa sombra vai andar para o lado direito, segundo paramentro é quanto vai andar para baixo e o terceiro paramentro vai espalhar e o ultimo é a cor/transparencia*/
+    border-radius: 10px; /*BORDER-RADIUS significa RAIO DA BORDA, para a imagem ou background(fundo) não ficar com as bordas quadradas, e sim redondas*/
+    height: auto;
+}
+
+h1{
+    color: #A2ADE8;
+    text-align: center; /*TEXT-ALIGH: CENTER é para alinhar o texto no centro*/
+    text-shadow: 1px 1px 0px #6e759c9b; /*TEXT-SHADOW é para adicionar sombra no texto, igual ao BOX-SHADOW*/
+}
+
+h2{
+    color: #626A96;
+}
+
+p{
+    text-align: justify;
+    height: auto;
+}

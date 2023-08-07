@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*Aparece esses 3 tipos de fontes para o navegador seguir a ordem, se não estiver a primeira fonte vai atrás da segunda fonte, se não estiver a segunda vai localizar a terceira fonte que no caso é uma generica*/
+            font-size: 1em;
+            /*Medidas Absolutas
+            cm, mm, in, px, pt,pc
+
+            Medidas Relativas
+            em, ex, rem, vx, vh, % (Recomendação para ser usado é PX e EM)
+
+            16px geralmente = 1em (se for 2em vai ser 32px). Melhor a ser usado é EM por causa das proporções das telas, EM é o que se encaixa melhor. Sempre que for utilizar EM caso queira apenas um pouquinho maior do que o padrão, pode usar dessa forma 1.5em sempre usar o ponto e não a virgula, o navegador não entende o uso de virgulas utilizado dessa forma e acaba passando por cima (deixando normal)*/
+        }
+        /*Pode juntar mais de um seletor para modificar, veja o exemplo: h1, h2{}*/
+
+        h1{
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+        /*font-family: 'work sans', sans-serify;
+        font weight: bolder;
+        font-size: 3em;
+        font-style: italic:
+        
+        Para usar esses atributos todos em uma única linha de código como esta vendo acima, é só usar FONT: (font-style), (font-wheight), (font-size), (font-family) tem que seguir essa ordem*/
+
+        h2{
+            font: bold 2em sans-serif; /*Mesmo não tendo todas os atributos deve seguir a ordem*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quo dicta optio veniam, minima ducimus itaque modi beatae facilis molestias, deserunt odit doloremque temporibus necessitatibus laudantium. Aliquam fugit minus rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut error, cupiditate adipisci dolor voluptatum cumque unde vel esse. Nesciunt et debitis rerum reiciendis voluptates sapiente incidunt, odio magni aliquam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum minima sunt, incidunt ipsum autem placeat aperiam qui et atque nulla cum doloribus similique fuga libero soluta harum labore rerum laboriosam?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque earum voluptatum, omnis sequi sint quia explicabo nemo maiores ex molestias neque adipisci quo, accusamus pariatur numquam! Autem nostrum praesentium deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

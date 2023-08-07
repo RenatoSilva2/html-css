@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style> /*SHORTHAND é uma propriedade de multiplos elementos*/
+        h1{ /*BOX-LEVEL*/
+            /*Podemos usar INLINE-LEVEL em uma BOX-LEVEL e podemos fazer ao contrario, usar BOX-LEVEL em um INLINE-LEVEL*/
+
+            background-color: lightgrey; /*Cor do fundo*/
+            height: 300px; /*Altura*/
+            width: 300px; /*Largura*/
+            /*Posso criar uma BOX SIZE utilizando esses dois estilos acima (Largura da caixa)*/
+
+            border: 10px solid rgb(49, 49, 49); /*Largura da borda, Estilo de borda e Cor da borda (SHORTHAND)*/
+
+            padding: 10px; /*Acochoamento*/
+
+            margin: 20px auto 40px auto; /*Podemos usar o atributo AUTO na parte direita e na parte da esquerda, com isso vai calcular no automatico, lembrando quê, essa margem automatica vai deixar a box-level(caixa) centralizada por causa do atributo AUTO na direita e na esquerda*/
+
+            outline: 9px dashed aqua; /*Contorno da largura, Estilo de contorno E Cor do contorno ()SHORTHAND*/
+        }
+
+        a{/*INLINE-LEVEL*/
+            border: 10px solid red; /*SHORTHAND*/
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1> <!--H1 é uma box-level, box-level quebra uma linha para adicionar o texto e ocupa o espaço por completo da linha e depois quebra uma linha novamente pra continuar o texto-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

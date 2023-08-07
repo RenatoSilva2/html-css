@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: rgb(212, 208, 208);
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        } /*Display: inline-block serve para ficar os blocos na mesma linha.
+        border é para algo ganhar uma borda, como na tag acima , BORDER tem uma shorthand (não precisa digitar tag por tag para adicionar as coisas)
+        Para fazer o "bloco" usou height e width (Altura e Largura)*/
+
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            background-color: cyan;
+        } /*HOVER é uma pseudo-classe, é uma configuração de estado, como pode ver mudou a cor quando passou o mouse por cima do bloco criado*/
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: rgb(0, 255, 242);
+
+        }
+        </style>
+</head>
+<body>
+    <div 
+       id="d1">01
+    <p>ACHOUUU</p>
+    </div> <!--DIV serve para da espaço-->
+    <div 
+       id="d2">02
+    <p>ACERTOUU!!</p>
+    </div>
+    <div 
+       id="d3">03
+       <p>TENTE NOVAMENTE...</p>
+    <p></p>
+</div>
+</body>
+</html>

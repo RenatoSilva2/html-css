@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(33, 52, 52, 0.501);
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*Para usar um seletor mais especifico é só Id="" e entre os paranteses identificar como esse seletor vai ser chamado, lembrando que a id é usada com um "#" na CSS para identificar que é uma id. (Só pode 1 elemento na id, ou seja cada id tem o seu CPF para identificar) Na class pode varios elementos dentro da mesma class.
+    Ja em uma "class" é usado um "." e para identificar na CSS, e para usar é so digitar class e especificar como vai ser chamada. (PARA SABER COMO USAR, É SÓ IR NO CODIGO E VER)
+    
+    O ID sempre vai permanecer por cima do class caso junte os dois par fazer uma alteração*/
+
+
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(21, 52, 52);
+    color: white;
+}
+
+h1{
+    color: rgb(39, 255, 255);
+}
+
+h2{
+   color: rgb(146, 240, 242);
+}
+
+.basico{
+   color: rgb(105, 225, 105);
+}
+
+.intermediario{
+   color: rgb(213, 213, 90);
+}
+
+.avancado{
+    color: rgb(224, 92, 92);
+}
+
+.destaque{
+    color: antiquewhite;
+}
+
+.sombra{
+    text-shadow: 2px 2px 5px;
+}

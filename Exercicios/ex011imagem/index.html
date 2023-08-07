@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <P>Tente abrir esse site em vários dispositos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</P>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem01p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem02m.png" type="image/png">
+        <img src="imagens/imagem03g.png" alt="imagem flexivel">
+    </picture> <!--Para adicionar uma imagem e que ela se encaixe em varios formatos (Tv, Tablet e Celular) vai ter usar a tag PICTURES, e dentro dessa tag usar a tag IMG="foto padrão no caso a maior" e para adicionar a mesma foto mas com uma largura e altura menor, usar a tag SOURCE MEDIA TYPE, mudar a largura para max (maximo) por padrão vai esta em mid(menor) ao lado adicionar os pixels da imagem, ja que começou usando uma imagem grande por padrão, no px vai colocar o tamanho dela caso ficar aparecendo uma barra de rolagem é só aumentar os pixels e no atributo SRCSET="adicionar o diretorio e selecionar a imagem, exemplo: imagens/imagem02m.png", para quando minizar a tela ou for um dispositivo com uma tela menor aparecer essa imagem do atributo SRCSET e no atributo TYPE indicar qual é o tipo de imagem e por fim, caso a sua imagem menor não carregar é só retirar o espaço que tem no nome do arquivo, exemplo: imagem 01p.png, irá ficar assim, imagem01p.png, ou seja todas as palavras juntas sem espaço.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Filipe Ret - F_F_M.mp3" controls .autoplay></audio> <!--MP3, OGG E WAV, são os melhores formatos de arquivos para áudio. Se ele não carregar em formato mp3 em seguida vai carregar o segundo formato, veja um exemplo abaixo na segunda tag AUDIO.-->
+    <!--Para adicionar áudio no seu site, use a tag AUDIO, dentro do src(origem)adicionar o seu áudio, mas não para por aqui, vai tem que adicionar dois atributos que são: controls (controle) e autoplay (reproduzir o áudio quando o site for aberto)-->
+     <audio preload="metadata" controls>
+           <source src="midia/SET_DJ_Boy_3.mp3" type="audio/mpeg">
+           <source src="midia/Filipe Ret - F_F_M.mp3" type="audio/ogg">
+           <source src="midia/Filipe Ret - F_F_M.mp3" type="audio/wav">
+     </audio><!--Depois que usar o segundo método para adicionar áudio, vai ter que apagar "src" um atributo que vem junto com a tag AUDIO, e dentro da tag AUDIO, usar outra tag que se chama SOURCE:SRC, dentro do atributo src (ORIGEM) adicionar o arquivo mp3 padrão, e no atributo TYPE especificar qual é o tipo de arquivo, no MEDIA TYPES (Site que é para ver os tipos de arquivos suportados de acordo com o arquivo que você quer adicionar) se o seu arquivo que vc adicionou for MP3 pesquise por mp3 no MEDIA TYPES e se for outros como, OGG ou WAV fazer a mesma coisa, pesquisar. Lembrando quê, abaixo da tag SOURCE:SRC, adicionar outra tag SOURCE:SRC mas com outro formato de arquivo, ja que usou o arquivo MP3 logo de padrão, usar o arquivo ogg e depois abaixo dessa segunda tag, criar outra tag SOURCE:SRC no caso a terceira tag para adicionar outro tipo de arquivo que agora vai ser WAV (esse arquivo é extremamente pesado, não recomendando usar), é preciso utilizar esses 3 tags (SOURCE:SRC) sendo o que vai mudar é o formato de arquivo, mp3, ogg ou wav usar "audio" na frente, veja o exemplo acima.--> <!--Caso a música for bem curta e quer que ela fique sempre tocando usar o atributo LOOP ao lado de CONTROLS/AUTOPLAY-->
+    <p>Infelizmente seu navegador não consegue reproduzir áudios. <!--Caso não reproduzir nenhum tipo dos áudios que adicionamos, apenas uma mensagem informativa-->
+    <p><a href="midia/Filipe Ret - F_F_M.mp3">Clique aqui para baixar o arquivo</a></p> <!--usando a tag A (link/Hyperlink) para realizar o download do arquivo--> <!-- dentro da tag AUDIO logo no fim do ">" usar o atributo PRELOAD para fazer uns ajustes, quando aparecer esse atributo vai ter que adicionar uma das 3 palavras, "auto", "metadata" e "nome", a primeira (auto)significa quê, todo vez que o site for aberto vai reproduzir o áudio, a segunda (metadata) vai carregar algumas pequenas informações do arquivo e baixar (download) pouco a pouco o arquivo ja que vai reproduzir, mas não vai reproduzir automaticamente vai ficar pausado, e a terceira (nome) não irá carregar as informações do arquivo e não vai reproduzir sozinho, o melhor á se usar é o METEDATA. Logo depois usar outro atributo dentro da mesma tag que é AUTOPLAY que é para reproduzir o áudio quando o site for aberto e depois usar outro atributo chamado CONTROLS é para aparecer os controles perto do arquivo para pausar e da play. CASO FICOU ALGUMA DÚVIDA É SO OLHAR ACIMA COMO FIZEMOS E ACOMPANHAR OS PASSOS -->
+</body>
+</html>

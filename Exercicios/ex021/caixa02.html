@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style> /*"*" é pra uma configuração universal, onde vai ser aplicado a todos os elementos*/
+        body{ /*Fazer alguma alteração no body vai ser no conteudo por todo*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+
+        header{
+            background-color: rgb(222, 222, 222);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(111, 101, 101);
+            padding: 3px;
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.424);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgb(222, 222, 222);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /*Usar SHORTHAND em BORDER-RADIUS começa pela esquerda, depois direita, baixo e em cima. Exemplo: 10px 8px 6px 5px e se usarmos apenas dois valores, vai ser modificado a parte SUPERIOR ESQEUERDA e em seguida a parte INFERIOR DIREITA, se quiser modificar os 4 lados de uma única só vez, é so usar BORDER-RADIUS: 10px*/
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.388);
+        }
+
+        article{
+            background-color: rgb(171, 176, 180);
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(130, 133, 136);
+            text-align: left;
+        }
+
+        #assuntos{
+            box-shadow: 2px 5px 5px black;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > P{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px; /*Para criar uma "bola" é so criar "HEIGHT + WIDTH + BACKGROUND-COLOR E USAR UMA BORDER-RADIUS"*/
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho (DIV SEMÁNTICA ESPECIAL)-->
+         <h1>Meu Site</h1>
+        <nav> <!--A tag NAV serve para adicionar links (utilizando a tag A) significa navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--conteúdo principal (DIV SEMÁNTICA ESPECIAL)-->
+         <section id="assuntos">
+             <p>Esportes Política Tecnologia</p>
+         </section> <!--secção-->
+         <section id="noticias">
+             <p>CEO da Apple aumenta a sua fortuna em 12 milhões essa semana</p>
+         </section>
+             <article> <!--artigo (texto)-->
+                <h2>Notícias sobre o Brasil </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem, sit, libero et cum voluptas hic nesciunt tempora iure earum voluptatem reprehenderit fuga ratione laborum labore quod accusamus illo quia!</p>
+                <aside> <!--conteudo relativo ao aritgo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+             </article>
+    </main>
+    <footer> <!--rodapé (DIV SEMÁNTICA ESPECIAL)-->
+        <p>Desenvolvido pelo JS Group</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
+            /*Shorthand - Background
+            background color > image > position > repeat [size] attachment*/
+
             height: 100vh;
-            background-color: black;
-            background-image:  url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
+           
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed; /*Background attachment, serve para fixar a imagem de fundo ou deixar rolar de acordo com o que vc mexe no scroll do mouse (Fixed e Scroll)*/
+            background-size: cover;
+
+
         }
 
         main{
@@ -28,7 +32,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi magni, quia architecto illo quis fugit accusantium voluptatum nesciunt minus nam minima commodi! Itaque eos consequatur, tempora dolorum earum sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis perferendis iusto asperiores a doloremque assumenda totam corporis perspiciatis deleniti sint, amet ut quas quo provident! Culpa voluptates reprehenderit iure veniam?</P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quasi magni, quia architecto illo quis fugit accusantium voluptatum nesciunt minus nam minima commodi! Itaque eos consequatur, tempora dolorum earum sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis perferendis iusto asperiores a doloremque assumenda totam corporis perspiciatis deleniti sint, amet ut quas quo provident! Culpa voluptates reprehenderit iure veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea quaerat cumque similique commodi eum, ratione in labore tempore, rem, quasi est deserunt reiciendis neque fugit eius tempora at porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum debitis repellat provident ab totam? Amet vitae blanditiis incidunt architecto aspernatur sapiente esse fugiat alias repellat, commodi id nulla, delectus consectetur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem totam cum sequi alias pariatur veritatis natus omnis? Eos pariatur explicabo exercitationem delectus ut, aliquid facilis architecto minus odio porro ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dicta deleniti ipsa incidunt? Adipisci voluptatum neque, sapiente soluta ratione nostrum ut. Ducimus illo ea omnis velit alias corrupti, autem consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptatibus voluptates voluptatum, facilis temporibus eum aut, porro placeat eaque odio distinctio soluta ipsam alias magnam, eligendi expedita iure quae labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem consequuntur quisquam ex molestias voluptate, debitis nobis temporibus rerum. Consequuntur dolores accusamus recusandae delectus veritatis iure tempora cumque asperiores iusto commodi!
+        </P>
     </main>
 
 </body>

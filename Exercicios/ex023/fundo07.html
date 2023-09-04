@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        #conteudo{ /* Para deixar uma box level no centro, usamos o seletor "POSITION: ABSOLUTE", e depois "LEFT: 50%" e TOP: 50%, fazendo isso ja vai da pra ver uma modoficação, mas ainda não é o esperado, com isso usamos outro seletor que é "TRANSFORM: TRANSLATE" dentro desse seletor é so usar -50%, -50% para ficar centralizada essa box level */
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: lightgreen;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

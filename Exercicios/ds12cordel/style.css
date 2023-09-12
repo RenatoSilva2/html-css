@@ -58,27 +58,47 @@ section{
     font-size: 1.3em;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 section.imagem p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.365);
+    background-color: rgba(0, 0, 0, 0.6);
     padding-left: 5px;
     width: 400px;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 5px;
 }
 
 section.normal{
     background-color: white;
     color: black;
+    background-size: cover;
 }
 
 section.imagem{
     background-color: rgb(48, 48, 48);
     color: white;
+    box-shadow: inset 6px 6px 13;
+    background-attachment: fixed;
+    
+}
+
+section#img01{
+    background-image: url(../ds12cordel/imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url(../ds12cordel/imagens/background002.jpg);
 }
 
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 

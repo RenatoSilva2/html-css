@@ -10,18 +10,26 @@
         }
         table{
             width: 400px;
-            border-collapse:separate; /*BORDER COLLAPSE; SERVE PARA DEIXAR A BORDA DAS LINHAS COLADAS OU NÃO, ATRIBUTO COLLAPSE DEIXA COLADA, SEPARETE, DEIXA SEPARADA*/
+            height: 400px;
+            border-collapse: collapse; /*BORDER COLLAPSE; SERVE PARA DEIXAR A BORDA DAS LINHAS COLADAS OU NÃO, ATRIBUTO COLLAPSE DEIXA COLADA, SEPARETE, DEIXA SEPARADA*/
         }
         td{
             border: 1px solid black;
             padding: 10px;
-        }
-        tr.linha{
-            background-color: aquamarine;
+            text-align: center; /*Podemos usar TEXT ALIGH*/
+            vertical-align: top; /*Serve para alinhar textos em baixo, meio ou em cima de forma vertical*/
         }
 
-        td.verde{
-            background-color: green;
+        .numero{
+            text-align: right;
+        }
+
+        .bottom{
+            vertical-align: bottom;
+        }
+
+        .esquerda {
+            text-align: left;
         }
 
     </style>
@@ -39,21 +47,21 @@
         <tr> <!--Primeira linha-->
             <td>A1</td>
             <td>B1</td>
-            <td>C1</td>
+            <td class="bottom">C1</td>
         </tr>
         <tr> <!--Segunda linha-->
-            <td>A2</td>
+            <td class="esquerda">A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr class="linha"> <!--Terceira linha-->
-            <td>A3</td>
+            <td class="esquerda">A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr> <!--Quarta linha linha-->
             <td>A4</td>
             <td>B4</td>
-            <td class="verde">C4</td>
+            <td class="bottom">C4</td>
     </table>
 </body>
 </html>

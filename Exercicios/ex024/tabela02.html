@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*Pra usar o efeito de cabeçalho fixo, tem que usar a tag "POSITION: RELATIVE", no seletor TABLE, depois criar outro seletor "THEAD > TR > TH, dentro desse seletor, usar "POSITION: STICKY > TOP: 0, > BACKGROUND-COLOR: IGUAL A DO CABEÇALHO. É melhor usar, esse "efeito", caso a tabela tenha muitas linhas, o efeito fica melhor.*/
         }
 
         caption{
@@ -27,20 +28,26 @@
             border: 1px solid black;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         thead, tfoot{
             background-color: grey;
             color: white;
         }
 
-        tbody > tr:nth-child(odd){ 
-            background-color: white;
-        }/*Lembrando, para usar o efeito "zebrado" nas linhas, precisa usar pseudo-classe, que é ":nth-child(odd ou even)"*/ 
+        
+        /*Lembrando, para usar o efeito "zebrado" nas linhas, precisa usar pseudo-classe, que é ":nth-child(odd ou even)"*/ 
         
         /* no lugar de odd, posso usar 2n-1*/
 
-        tbody > tr:nth-child(even){ 
-            background-color: lightgray;
-        } /* no lugar de even, posso usar 2n, mas é melhor usar palavras (odd ou even)*/
+        tbody tr:nth-child(odd){
+            background-color: cadetblue;
+        }
+         /* no lugar de even, posso usar 2n, mas é melhor usar palavras (odd ou even)*/
 
 
 
@@ -121,5 +128,17 @@
                 <td class="num"><strong>164.669.095</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, modi? Consectetur, repudiandae. Dolorem tenetur inventore consectetur eius nihil! Perferendis sapiente quasi accusantium numquam est vitae facilis rerum neque dolorem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil consectetur? Qui quisquam ea necessitatibus iure! Tenetur quae suscipit ipsum? Quos corporis molestias, incidunt amet tenetur doloribus sit illo ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam tempora dolor placeat laborum soluta harum dolores. Ducimus, quidem voluptatem itaque, assumenda dicta nostrum, totam vitae ad similique ea neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium provident ipsam quidem! Repudiandae, eaque? Aliquid, animi? Ea animi quisquam cum. Doloremque earum officiis, magni aspernatur quas expedita. Ipsa, provident. Cupiditate.
+    </p>
 </body>
 </html>

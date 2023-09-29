@@ -31,16 +31,17 @@
     <h1>Exercício de Tabela</h1>
     <table>
         <caption>Filmes Favoritos</caption>
+        <!--SCOPE, será usado para ter mais sentido os dados, usamos scope: "col", quando for algo em coluna, tipo o titulo em cima e em baixo desse tiulo tem uns dados, por isso que é usado scope "col", por que os dados estão abaixo do titulo, já scope: "row", é para quando os dados estiver ao lado do titulo, veja os exemplos -->
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
-            </tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr> <!-- Usou scope: "colgroup", por que o titulo acima esta ocupando 3 colunas, por isso o uso de scope: "colgroup" -->
         </thead>
         <tbody>
-            <tr>
-                <th rowspan="3">Mulheres</th>
+            <tr> <!-- Usou scope: "rowgroup", por que o titulo mulheres, esta ocupando 3 linhas, e rowgroup, porque tem varios dados nessas 3 linhas -->
+                <th scope="rowgroup"  rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rmabo</td>
@@ -59,7 +60,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -78,6 +79,10 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th scope="row" colspan="4">Total</th>
+            <td>1000</td>
+        </tfoot>
     </table>
 </body>
 </html>

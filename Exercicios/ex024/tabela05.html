@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            padding: 8px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        col.cnome{
+            background-color: lightslategray;
+        }
+
+        col.csexo{
+            background-color: aquamarine;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <!--Podemos usar "COLGROUP", para colocar um estilo na coluna inteira e podemos usar "SPAN", para o estilo pegar em duas ou em mais colunas sem precisar classe, mas só funciona em colunas que estejam ao lado uma da outra, veja o exemplo abaixo.-->
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo" span="3">
+        <col class="cprofissao">
+        
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Natalí</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Veterinaria</td>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Fabiana</td>
+            <td>F</td>
+            <td>41</td>
+            <td>Médica</td>
+        </tr>
+    </table>
+
+</body>
+</html>

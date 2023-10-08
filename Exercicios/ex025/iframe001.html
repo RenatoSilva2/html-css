@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site do
     <!-- Iframe é para um conteúdo ser exibido em uma pequena janela na mesma linha do paragrafo, ou seja o iframe é "INLINE", iframe para ficar melhor de entender é um quadro em linha.
     
-    Sim, existe alguns sites que são protegidos para não ser exibido dessa maneira, utilizando iframe
+    Sim, existe alguns sites que são protegidos para que não seja exibido dessa maneira, utilizando o iframe. Nem todos os navegadores para celular vai suportar "iframes"
+
+    Tamanho padrão de um iframe 300x150
     -->
-    <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>   
+
+    <!--Dentro da tag "iframe", podemos usar um link "tag a", para caso o celular não suporte o iframe, vai aparecer o link do site -->
+
+    <!--Podemo usar o atributo "SCROLLING:(AUTO, NO E YES)", serve para ter uma rolagem do conteúdo, "yes e auto", vai ter essa rolagem, sendo o "yes", vai forçar a ter essa barra de rolagem, já quando for "no", vai aparecer apenas o inicío do site e não é permito fazer a rolagem-->
+    <p>Acessando o site do
+
+    <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+
+        <a href="https://www.cursoemvideo.com" target="_blank"></a>
+
+    </iframe>   
         
     para aprender a programar.</p>
+
+<p>O repositório do Guanabara
+    
+    <iframe src="https://gustavoguanabara.github.io" frameborder="0" scrolling="yes">
+
+        <a href="https://gustavoguanabara.github.io" target="_blank"></a>
+    </iframe>
+    
+    também é bem legal
+    </p>
+    
 </body>
 </html>

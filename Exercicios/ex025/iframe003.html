@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 50vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatum explicabo dolorem illum repellat aliquid odit molestias repudiandae atque? Maiores similique vel odit eveniet incidunt sint facilis itaque est unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex eaque blanditiis temporibus possimus ipsam distinctio rerum dignissimos magnam. Omnis rem nihil eligendi excepturi asperiores soluta, dolorum optio quidem molestias!</p>
+
+    <ul> <!--Podemos fazer aparecer alguma página dentro do iframe, dentro da tag "A", usamos o atributo "target", mas lá na tag do iframe, adicionamos o atributo "NAME", com isso podemos escolher algum nome e dentro do taregt, usamos ele. Veja o exemplo-->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a>
+        </li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+        <li><a href="https://renatosilva2.github.io/projeto-android/" target="frame">Quarta Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate quae corrupti accusantium, optio omnis perferendis odit pariatur dolorum magni quam labore tempora dicta eos sequi velit cupiditate placeat similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ea repellendus! Nemo consectetur maxime laborum quam culpa facere aliquid earum error ut! Quis, rerum sint consequuntur aliquid est laborum aperiam.</p>
+
+    <!--Usamos a tag P (parágrafo), com uma mensagem indicando que o navegador não é compatível com iframe-->
+    <iframe src="" id="tela" name="frame"> 
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eius illum sint deserunt, molestias esse aliquam in modi vitae dolore. Sunt dolorum nesciunt dolorem amet enim tempore atque nihil neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum quasi a dolores ad nostrum consequuntur assumenda? Assumenda porro fugit illum modi neque doloremque quidem hic vero repellendus minima. Consequatur.</p>
+</body>
+</html>

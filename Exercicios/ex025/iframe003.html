@@ -30,9 +30,10 @@
     </ul>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate quae corrupti accusantium, optio omnis perferendis odit pariatur dolorum magni quam labore tempora dicta eos sequi velit cupiditate placeat similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ea repellendus! Nemo consectetur maxime laborum quam culpa facere aliquid earum error ut! Quis, rerum sint consequuntur aliquid est laborum aperiam.</p>
+    <!--Usamos a tag P (parágrafo), com uma mensagem indicando que o navegador não é compatível com iframe. Isso entre a abertura da tag e o fechamento, veja o exemplo mais abaixo-->
 
-    <!--Usamos a tag P (parágrafo), com uma mensagem indicando que o navegador não é compatível com iframe-->
-    <iframe src="" id="tela" name="frame"> 
+    <!--Para o iframe quando for carregado não ficar em branco, podemos usar o parâmentro "SRCDOC", que é pode ser adicionado conteúdo em HTML/CSS, veja o exemplo abaixo-->
+    <iframe srcdoc="<h1>Escolha uma das opçõs acima para ser exibida.</h1> <p>apenas um exemplo, aqui usei o parãmentro SRCDOC, para usar conteúdos em HTML<p/>" id="tela" name="frame"> 
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
 
